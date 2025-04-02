@@ -26,9 +26,29 @@ body{
     width: 100%;
 }
 
+.personcontainer{
+    display: flex;
+    position: sticky;
+    padding: 50px;
+    margin-top: 10%;
+    gap: 10px;
+    justify-content: center;
+}
 
-.class1:hover, .class2:hover, .class3:hover{
+
+.class1:hover, .class2:hover, .class3:hover, .class0:hover{
     -webkit-text-fill-color: rgba(59, 59, 59, 1);
+}
+
+.class0{
+    background-color: white;
+    padding: 50px;
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    border-radius: 20px;
+    border-color: rgb(138, 146, 136);
 }
 
 .class1{

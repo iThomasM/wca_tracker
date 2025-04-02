@@ -18,6 +18,8 @@ async function get_data(wca_id, wca_event){
         }
 
         const person = await response.json();
+        const name = person.name
+        const country = person.country
         let solves = get_average(person, wca_event);
         let average = solves[0];
         let count = solves[1];
@@ -31,12 +33,16 @@ async function get_data(wca_id, wca_event){
         const best_event_header = document.getElementById("mostlikely");
         const podiums_header = document.getElementById("podiums");
         const medals_header = document.getElementById("medals");
+        const name_header = document.getElementById("name");
+        const country_header = document.getElementById("country");
         averate_header.innerText = "Lifetime Average: " + average + "s";
         solve_header.innerText = "Total Solves: " + count;
         winrate_header.innerText = "Winrate: " + winrate + "%";
         best_event_header.innerText = "Most likely to Win: " + best_event;
         podiums_header.innerText = "Event Podiums: " + podiums;
         medals_header.innerText = "Medals: " + medals;
+        name_header.innerText = name;
+        country_header.innerText = country;
     }
     catch(error){
         console.error(error);

@@ -15,11 +15,10 @@ img{
 
 .container{
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px solid #ccc;
     border-radius: 50px;
