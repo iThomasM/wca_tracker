@@ -36,8 +36,15 @@ body{
 }
 
 
-.class1:hover, .class2:hover, .class3:hover, .class0:hover{
+.class1:hover, .class2:hover, .class3:hover{
     -webkit-text-fill-color: rgba(59, 59, 59, 1);
+    transform: scale(1.25);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.class1, .class2, .class3{
+    transition: transform .2s, margin-left .2s, margin-right .2s;
 }
 
 .class0{
