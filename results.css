@@ -11,39 +11,54 @@ body, main{
 
 body{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
+}
+.container2{
+    display: none;
 }
 
 .container{
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
-    gap: 20px;
-    justify-content: center;
-    width: 100%;
+    margin-top: 5%;
+    gap: 16px;
+    justify-content: flex-start;
+    width: 75%;
+    height: 25vh;
 }
 
 .personcontainer{
     display: flex;
-    position: sticky;
-    padding: 50px;
-    margin-top: 10%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
     gap: 10px;
-    justify-content: center;
 }
 
+.compare{
+    display: none;
+    padding: 10px;
+    gap: 20px;
+}
+input, button{
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    flex: 0 1 auto;
+}
 
-.class1:hover, .class2:hover, .class3:hover{
+.class1:hover, .class2:hover, .class3:hover, .class4:hover, .class5:hover, .class6:hover{
     -webkit-text-fill-color: rgba(59, 59, 59, 1);
-    transform: scale(1.25);
-    margin-left: 100px;
-    margin-right: 100px;
+    transform: scale(1.05);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.class1, .class2, .class3{
+.class1, .class2, .class3, .class4, .class5, .class6{
     transition: transform .2s, margin-left .2s, margin-right .2s;
 }
 
@@ -80,6 +95,38 @@ body{
     border-color: rgb(138, 146, 136);
 }
 .class3{
+    background-color: white;
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    border-radius: 20px;
+    border-color: rgb(138, 146, 136);
+}
+
+.class4{
+    background-color: white;
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    border-radius: 20px;
+    border-color: rgb(138, 146, 136);
+}
+
+.class5{
+    background-color: white;
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid;
+    border-radius: 20px;
+    border-color: rgb(138, 146, 136);
+}
+.class6{
     background-color: white;
     padding: 50px;
     display: grid;

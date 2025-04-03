@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="results.css">
 </head>
 <body>
-    <div class="personcontainer">
-        <div class="class0">
-            <h1 id="name">Name</h1>
-            <h1 id="country">Country</h1>
-        </div>
+    <div class="compare">
+        <h1>Compare: </h1>
+        <input id="secondary" placeholder="Compare with WCA ID">
+        <button id="submit">Submit</button>
     </div>
     <div class="container">
+        <div class="personcontainer">
+            <div class="class0">
+                <h1 id="name">Name</h1>
+                <h1 id="country">Country</h1>
+            </div>
+        </div>
         <div class="class1">
             <h1 id="average">Lifetime Average: Loading...</h1>
             <h1 id="solve_count">Solve Count: Loading...</h1>
@@ -26,6 +31,29 @@
             <h1 id="podiums">Event Podiums: Loading...</h1>
             <h1 id="medals">Medals: Loading...</h1>
         </div>
+    </div>
+    <div class="container2">
+        <div class="personcontainer">
+            <div class="class0">
+                <h1 id="name2"></h1>
+                <h1 id="country2"></h1>
+            </div>
+        </div>
+        <div class="class4">
+            <h1 id="average2"></h1>
+            <h1 id="solve_count2"></h1>
+        </div>
+        <div class="class5">
+            <h1 id="winrate2"></h1>
+            <h1 id="mostlikely2"></h1>
+        </div>
+        <div class="class6">
+            <h1 id="podiums2"></h1>
+            <h1 id="medals2"></h1>
+        </div>
+    </div>
+    <div>
+        <canvas id="chart"></canvas>
     </div>
     <script src="results.js"></script>
 </body>
