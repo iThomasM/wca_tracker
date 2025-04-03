@@ -16,7 +16,7 @@ document.getElementById("submit").onclick = function(){
 
 let event_dict = {
     "333": "3x3", "222": "2x2", "444": "4x4", "555": "5x5", "666": "6x6", "777": "7x7",
-    "skewb": "Skewb", "pyram": "Pyraminx", "333bf": "3BLD",
+    "skewb": "Skewb", "pyram": "Pyraminx", "333bf": "3BLD", "sq1": "Sq-1",
 }
 
 async function get_data(wca_id, wca_event){
