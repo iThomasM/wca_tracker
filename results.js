@@ -45,6 +45,7 @@ async function get_data(wca_id, wca_event){
             const medals_header = document.getElementById("medals");
             const name_header = document.getElementById("name");
             const country_header = document.getElementById("country");
+            const selected_event_header = document.getElementById("selected_event");
             average_header.innerText = "Lifetime Average: " + average + "s";
             solve_header.innerText = "Total Solves: " + count;
             winrate_header.innerText = "Winrate: " + winrate + "%";
@@ -53,6 +54,7 @@ async function get_data(wca_id, wca_event){
             medals_header.innerText = "Medals: " + medals;
             name_header.innerText = name;
             country_header.innerText = country;
+            selected_event_header.innerText = event_dict[wca_event];
         }else{
             const average2_header = document.getElementById("average2");
             const solve2_header = document.getElementById("solve_count2");
